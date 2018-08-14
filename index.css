@@ -1,0 +1,152 @@
+* {
+    box-sizing:border-box;
+    }
+    
+    body {
+    background-color:#005F66;
+    color:#FFF;
+    font-family:Philosopher, sans-serif;
+    text-align:center;
+    }
+    
+    a:visited {
+    color:#FFF;
+    }
+    
+    #food,#exercise {
+    font-size:20px;
+    font-weight:700;
+    }
+    
+    footer {
+    bottom:0;
+    font-size:10px;
+    left:0;
+    position:static;
+    text-align:center;
+    width:100%;
+    }
+    
+    .time {
+    color:#FF0;
+    display:block;
+    font-size:23px;
+    font-weight:700;
+    line-height:50px;
+    }
+    
+    .foodDetails,.userExerciseDetails {
+    background-color:transparent;
+    border:solid 2px #FFF;
+    border-radius:15px;
+    color:white;
+    font-size:20px;
+    height:50px;
+    outline:0;
+    padding:0 1em;
+    text-decoration:none;
+    width:50%;
+    }
+    
+    .userExerciseDetails {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    
+    .sample {
+    color:#FF0;
+    font-size:30px;
+    }
+    
+    .foodImage {
+    height:70px;
+    width:80px;
+    }
+    
+    .submit,.calories {
+    background-color:#FFF;
+    border:0;
+    border-radius:5px;
+    box-shadow:inset 0 0 0 2px #F5F5F5;
+    color:#000;
+    cursor:pointer;
+    display:table;
+    font-family:Philosopher, sans-serif;
+    font-size:18px;
+    height:2em;
+    letter-spacing:2px;
+    margin:0 auto;
+    text-align:center;
+    transition:background-color .2s ease-in-out, color .2s ease-in-out;
+    white-space:nowrap;
+    width:140px;
+    }
+    
+    .calories {
+    position:relative;
+    top:10px;
+    }
+    
+    button:hover {
+    background-color:gray;
+    color:#FFF;
+    font-size:20px;
+    }
+    
+    h1,.exe {
+    font-family:'Permanent Marker', cursive;
+    }
+    
+    .results {
+    color:#FFF;
+    line-height:5;
+    margin:0 auto;
+    text-align:center;
+    width:fit-content;
+    }
+    
+    .label {
+    background-color:#FFF;
+    color:#000;
+    display:block;
+    font-weight:700;
+    margin:0 auto;
+    position:relative;
+    text-align:center;
+    width:300px;
+    }
+    
+    .container {
+    background:transparent;
+    font-size:24px;
+    margin:0 auto;
+    max-width:960px;
+    padding:25px;
+    }
+    
+    p.note {
+    font-size:25px;
+    }
+    
+    #exercise {
+    color:#FFF;
+    line-height:3;
+    text-align:center;
+    }
+    
+    .parallax {
+    background:url(images/healthy-food.jpg) no-repeat center;
+    background-attachment:fixed;
+    background-size:cover;
+    height:500px;
+    }
+    
+    .error {
+    background-color:#FFF;
+    color:#e64e4e;
+    }
+    
+    .container a,.exercise a,table .link {
+    color:#FF0;
+    }

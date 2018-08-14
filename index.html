@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Nutrition and Calorie Counter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1">
+	<meta name="description" content="Calculate your daily nutrition">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher|Permanent+Marker" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="nutrition-label/dist/css/nutritionLabel-min.css">
+	<link rel="stylesheet" href="index.css" type="text/css" />
+</head>
+
+<body>
+	<div class="row">
+		<div class="col-6">
+				<header class="container" role="banner">
+						<h1>Nutrition & Calorie tracker</h1>
+						<h2>Calculate your daily nutrition and amount of calories you burnt.</h2>
+						<h3>You are what you Eat!</h3>
+						<a href="#food" class="proceed">Proceed</a>
+						<div class="parallax"></div>
+					</header>
+			<main class="main" role="main">
+				<section id="food" class="food" role="region">
+					<h2>Check your daily nutrients consumption</h1>
+					<form class="form" role="search">
+						<p class="note">Enter the details about the food you consumed
+							<span class="sample"> Eg. 2 bread slices with 1 tsp of butter</span>
+						</p>
+						<p>For more accurate results be specific and mention the quantity of the food or even the Ingredients used in the Recipe
+							itself!
+						</p>
+						<label class="time" for="breakfast">Breakfast</label>
+						<textarea id="breakfast" class="foodDetails js-morning"></textarea>
+						<label class="time" for="lunch">Lunch</label>
+						<textarea id="lunch" class=" foodDetails js-noon"></textarea>
+						<label class="time" for="snacks">Snacks</label>
+						<textarea id="snacks" class=" foodDetails js-snacks"></textarea>
+						<label class="time" for="dinner">Dinner</label>
+						<textarea id="dinner" class=" foodDetails js-dinner"></textarea>
+						<button class="js-getNutrition submit" type="submit">Calculate</button>
+						<table class="results" aria-live="assertive"></table>
+						<div class="label js-nutritionLabel" aria-live="polite">
+						</div>
+					</form>
+				</section>
+				<section id="exercise" class="exercise js-exercise" role="region">
+					<a href="#food" class="proceed">Jump to Nutrition section</a>
+					<h2 class="exe">Find out the number of Calories you burnt</h2>
+					<label class="exercise" for="exerciseDetails">Enter your workout details</label>
+					<textarea id="exerciseDetails" class="userExerciseDetails" placeholder="Eg. An hour of yoga"></textarea>
+					<button type="button" class="calories js-getExercise">Get Calories</button>
+					<div class="res js-exercise" aria-live="polite"></div>
+				</section>
+		</div>
+	</div>
+	</main>
+	<footer role="contentinfo">
+		<p>Powered by Nutrionix</p>
+	</footer>
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+			<script type="text/javascript" src="nutrition-label/dist/js/nutritionLabel-min.js"></script>
+			<script src="index.js"></script>
+</body>
+
+</html>
