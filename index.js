@@ -118,7 +118,7 @@ function sendExerciseDetails(exerciseDetails, callback) {
         "method": "POST",
         "headers": {
             "x-app-id": "039db79f",
-            "x-app-key": "edffc89a0cc7397efe3a456d0349b798",
+            "x-app-key": "52cacf0e69046fa519fd29eeb6151cb6",
             "content-type": "application/json",
             "cache-control": "no-cache",
             "postman-token": "3cc91911-d1a7-a4bc-0f41-b71bcc2ac34e"
